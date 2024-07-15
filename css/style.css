@@ -718,7 +718,6 @@ a:focus {
 }
 
 
-/**********************************/
 /*********** Skills CSS **********/
 /**********************************/
 .Skills {
@@ -732,12 +731,14 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
+    text-align: left; /* Align text to the left */
 }
 
 .Skills .srv-col i {
     font-size: 30px;
     color: #FF6F61;
     margin-bottom: 15px;
+    display: block; /* Ensure the icon is treated as a block element */
 }
 
 .Skills .srv-col h3 {
@@ -745,6 +746,17 @@ a:focus {
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 5px;
+    margin-top: 0; /* Remove any default top margin */
+    display: block; /* Ensure the heading is treated as a block element */
+}
+
+.Skills .srv-col p {
+    margin-top: 10px; /* Add some space between the heading and the paragraph */
+}
+
+/* Optional: Add some padding to the left to ensure consistent alignment */
+.Skills .srv-col-content {
+    padding-left: 10px;
 }
 
 .Certifications .exp-col h4 {
@@ -763,6 +775,7 @@ a:focus {
 .Certifications .exp-col p {
     margin: 0;
 }
+
 
 
 /**********************************/
